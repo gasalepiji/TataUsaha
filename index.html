@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tata Usaha | SMKN 2 Bandung</title>
+    <link rel="stylesheet" href="view/style/style.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/00/57/e6/0057e6e8eef771ce6b160d981dc038bc.png">
+</head>
+<body onload="checkDevTools()">
+    <div class="navbar-container">
+        <div class="navbar" id="navbar">
+            <div class="logo-container">
+                <img src="https://i.pinimg.com/originals/00/57/e6/0057e6e8eef771ce6b160d981dc038bc.png" alt="SMKN 2 Bandung" class="logo">
+            </div>
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navbar-menu">
+                <li><a href="#" onclick="smoothScroll('#section1')">Beranda</a></li>
+                <li><a href="page/1/layanan.html" onclick="smoothScroll('#section2')">Layanan</a></li>
+                <li><a href="page/2/kegiatan.html" onclick="smoothScroll('#section3')">Kegiatan</a></li>
+                <li><a href="page/3/pengumuman.html" onclick="smoothScroll('#section3')">Pengumuman</a></li>
+                <li><a href="page/4/kontak.html" onclick="smoothScroll('#section4')">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <section id="header">
+            <div class="headers" style="display: flex; justify-content: center; align-items: center; gap: 20px;"><br>
+                <img src="https://i.pinimg.com/originals/00/57/e6/0057e6e8eef771ce6b160d981dc038bc.png" alt="logo" style="width: 200px; pointer-events: none;">
+                <h1 style="text-align: center; font-size: 40px; text-decoration: underline 3px solid #0b0b64;">Tata Usaha SMKN 2 Bandung</h1>
+            </div><br>
+        </section>
+
+        <section id="main-content-1">
+            <div class="desc">
+                <p><strong>Selamat datang</strong> di layanan Tata Usaha SMKN 2 Bandung! Kami berkomitmen untuk memberikan dukungan administratif yang efisien, profesional, dan tepat waktu guna memastikan kelancaran operasional sekolah dan kebutuhan seluruh warga sekolah. Dengan tim yang terdiri dari tenaga ahli berpengalaman, kami siap melayani berbagai kebutuhan administrasi, mulai dari pengelolaan dokumen hingga penyusunan laporan berkala. Tata Usaha kami hadir sebagai ujung tombak dalam mendukung aktivitas sekolah secara keseluruhan, dengan selalu mengutamakan keteraturan, ketepatan, dan transparansi dalam setiap tugas yang dilakukan.</p><p>Layanan Tata Usaha SMKN 2 Bandung mencakup berbagai aspek administrasi, mulai dari pengelolaan dokumen penting, seperti ijazah, sertifikat, dan arsip kepegawaian, yang dikelola secara sistematis untuk memastikan akses dan penyimpanan yang mudah serta aman. Selain itu, kami juga menyediakan layanan administrasi harian yang meliputi penjadwalan, pengarsipan, serta pengolahan data siswa dan staf dengan teliti, sehingga dapat mendukung produktivitas dan efisiensi di lingkungan sekolah. Komunikasi internal antar-departemen juga menjadi prioritas kami, dengan koordinasi internal yang kami lakukan guna memastikan setiap informasi tersampaikan dengan baik untuk menunjang kolaborasi antar pihak di sekolah.</p><p>Tidak hanya itu, layanan pelanggan juga menjadi salah satu fokus utama kami. Tim Tata Usaha selalu siap memberikan informasi yang akurat dan bantuan yang ramah kepada siswa, orang tua, serta pemangku kepentingan lainnya. Kami berupaya memberikan respons yang cepat dan solusi yang tepat untuk setiap pertanyaan atau kebutuhan administrasi yang muncul. Terakhir, kami mendukung proses penyusunan laporan secara berkala dengan data yang akurat dan informatif, membantu para pengambil keputusan dalam menentukan langkah yang strategis untuk kemajuan sekolah.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 style="text-align: left; text-decoration: underline 3px solid #0b0b64;">SMK NEGERI 2 BANDUNG</h3>
+                <p style="text-align: left;">Alamat: Jl. Ciliwung No.4,
+                Kelurahan Cihapit,
+                Kec. Bandung Wetan,
+                Kota Bandung,
+                Jawa Barat 40114</p>
+                <p style="text-align: left;">Telepon: (022) 7234285<br>email : visit.smkn2bandung@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3 style="text-align: left; text-decoration: underline 3px solid #0b0b64;">AKSES CEPAT PEMPROV. JABAR</h3>
+                <ul>
+                    <li style="text-align: left;"><a href="https://www.bkn.go.id/layanan/myasn/">> MyASN</a></li>
+                    <li style="text-align: left;"><a href="https://kinerja.jabarprov.go.id/login">> TRK JABAR</a></li>
+                    <li style="text-align: left;"><a href="https://disdik.jabarprov.go.id/">> Dinas Pendidikan Prov. Jabar</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 style="text-align: left; text-decoration: underline 3px solid #0b0b64;">AKSES CEPAT APLIKASI</h3>
+                <ul>
+                    <li style="text-align: left;"><a href="http://lms.smkn2bandung.id:2222/">> Pembelajaran Daring (LMS)</a></li>
+                    <li style="text-align: left;"><a href="http://elib.smkn2bandung.id:3333/">> Perpustakaan Digital</a></li>
+                    <li style="text-align: left;"><a href="http://drive.smkn2bandung.id:1111/">> Drive SMK</a></li>
+                    <li style="text-align: left;"><a href="http://erapot.smkn2bandung.id:8154/">> e-Rapor</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SMKN 2 Bandung | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="view/script/script.js"></script>
+</body>
+</html>

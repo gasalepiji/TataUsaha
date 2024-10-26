@@ -1,0 +1,261 @@
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f4f9; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0056b3; 
+    border-radius: 10px; 
+    border: 2px solid #f4f4f9; 
+}
+
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Disable text selection */
+body, p, h1, h2, h3, h4, h5, h6, div {
+    -webkit-user-select: none;  /* Chrome, Safari, Opera */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* Internet Explorer/Edge */
+    user-select: none;          /* Non-prefixed version, currently supported by most browsers */
+}
+
+/* Horizontal Navbar Styling */
+.navbar-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0056b3;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    width: 40px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    transition: 0.3s;
+}
+
+/* Content Styling */
+.content {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #003f7f;
+}
+
+p, ul {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+#header {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#main-content-1 {
+    padding: 20px;
+    border-radius: 8px  ;
+    text-align: justify;
+}
+
+#main-content-1 a {
+    text-decoration: none;
+    color: blue;
+    transition: 0.2s ease-in-out;
+}
+
+#main-content-1 a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0056b3;
+    color: white;
+    padding: 40px 0 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #ffcc00;
+    padding-top: 10px;
+}
+
+
+/* Tampilan mobile */
+@media (max-width: 768px) {
+    .headers {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .headers h1 {
+        font-size: 24px; 
+    }
+
+    .headers img {
+        width: 150px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #0056b3;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        text-align: left; 
+        width: 100%; 
+    }
+
+    .footer-section:nth-child(1) {
+        order: 1; 
+    }
+
+    .footer-section:nth-child(2) {
+        order: 2; 
+    }
+
+    .footer-section:nth-child(3) {
+        order: 3; 
+    }
+}

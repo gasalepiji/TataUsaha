@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - Tata Usaha | SMKN 2 Bandung</title>
+    <link rel="stylesheet" href="../../view/style/style.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/00/57/e6/0057e6e8eef771ce6b160d981dc038bc.png">
+    <style type="text/css">
+        /* Custom Popup */
+        .popup {
+            display: none; /* Hide popup by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background-color: #fff;
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+        }
+    </style>
+</head>
+<body onload="checkDevTools()">
+    <div class="navbar-container">
+        <div class="navbar" id="navbar">
+            <div class="logo-container">
+                <img src="https://i.pinimg.com/originals/00/57/e6/0057e6e8eef771ce6b160d981dc038bc.png" alt="SMKN 2 Bandung" class="logo">
+            </div>
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navbar-menu">
+                <li><a href="../../index.html" onclick="smoothScroll('#section1')">Beranda</a></li>
+                <li><a href="../1/layanan.html" onclick="smoothScroll('#section2')">Layanan</a></li>
+                <li><a href="../2/kegiatan.html" onclick="smoothScroll('#section3')">Kegiatan</a></li>
+                <li><a href="../3/pengumuman.html" onclick="smoothScroll('#section3')">Pengumuman</a></li>
+                <li><a href="../4/kontak.html" onclick="smoothScroll('#section4')">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <section id="header">
+            <div class="headers">
+                <h1 style="text-align: center; font-size: 40px; text-decoration: underline 3px solid #0b0b64;">Layanan Tata Usaha</h1>
+            </div>
+        </section>
+
+        <section id="main-content-1">
+            <!-- Main Content 1 -->
+            <h1>Informasi dan Pengumuman Sekolah</h1>
+            <ul>
+                <li><a id="openPopupBtn">Jadwal Pendaftaran Siswa Baru</a></li>
+                <li><a id="openPopupBtn">Pengumuman Kelulusan</a></li>
+                <li><a id="openPopupBtn">Jadwal Ujian Sekolah</a></li>
+                <li><a id="openPopupBtn">Jadwal Libur dan Kalender Akademik</a></li>
+                <li><a id="openPopupBtn">Pengumuman Kegiatan Sekolah</a></li>
+            </ul>
+        </section>
+
+        <section id="main-content-1">
+            <!-- Main Content 2 -->
+            <h1>Layanan Administrasi Siswa</h1>
+            <ul>
+                <li><a id="openPopupBtn">Pengajuan Surat Keterangan</a></li>
+                <li><a id="openPopupBtn">Cetak Kartu Pelajar</a></li>
+                <li><a id="openPopupBtn">Pengajuan Perubahan Data Siswa</a></li>
+            </ul>
+        </section>
+
+        <section id="main-content-1">
+            <!-- Main Content 3 -->
+            <h1>Layanan Akademik</h1>
+            <ul>
+                <li><a id="openPopupBtn">Cetak Transkrip Nilai</a></li>
+                <li><a id="openPopupBtn">Jadwal Bimbingan Belajar dan Konseling</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <div id="customPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopupBtn">&times;</span>
+            <h2>Perhatian!!</h2>
+            <p>Mohon Maaf, layanan ini masih belum tersedia. Coba beberapa saat lagi.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 style="text-align: left; text-decoration: underline 3px solid #0b0b64;">SMK NEGERI 2 BANDUNG</h3>
+                <p style="text-align: left;">Alamat: Jl. Ciliwung No.4,
+                Kelurahan Cihapit,
+                Kec. Bandung Wetan,
+                Kota Bandung,
+                Jawa Barat 40114</p>
+                <p style="text-align: left;">Telepon: (022) 7234285<br>email : visit.smkn2bandung@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3 style="text-align: left; text-decoration: underline 3px solid #0b0b64;">AKSES CEPAT PEMPROV. JABAR</h3>
+                <ul>
+                    <li style="text-align: left;"><a href="https://www.bkn.go.id/layanan/myasn/">> MyASN</a></li>
+                    <li style="text-align: left;"><a href="https://kinerja.jabarprov.go.id/login">> TRK JABAR</a></li>
+                    <li style="text-align: left;"><a href="https://disdik.jabarprov.go.id/">> Dinas Pendidikan Prov. Jabar</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 style="text-align: left; text-decoration: underline 3px solid #0b0b64;">AKSES CEPAT APLIKASI</h3>
+                <ul>
+                    <li style="text-align: left;"><a href="http://lms.smkn2bandung.id:2222/">> Pembelajaran Daring (LMS)</a></li>
+                    <li style="text-align: left;"><a href="http://elib.smkn2bandung.id:3333/">> Perpustakaan Digital</a></li>
+                    <li style="text-align: left;"><a href="http://drive.smkn2bandung.id:1111/">> Drive SMK</a></li>
+                    <li style="text-align: left;"><a href="http://erapot.smkn2bandung.id:8154/">> e-Rapor</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SMKN 2 Bandung | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../view/script/script.js"></script>
+</body>
+</html>
