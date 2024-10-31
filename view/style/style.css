@@ -1,261 +1,260 @@
 /* Custom scrollbar styling */
 ::-webkit-scrollbar {
-    width: 10px; 
+    width: 10px; /* Menentukan lebar scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-    background: #f4f4f9; 
+    background: #f4f4f9; /* Mengatur warna latar belakang scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #0056b3; 
-    border-radius: 10px; 
-    border: 2px solid #f4f4f9; 
+    background-color: #0056b3; /* Mengatur warna thumb scrollbar */
+    border-radius: 10px; /* Membuat sudut thumb scrollbar membulat */
+    border: 2px solid #f4f4f9; /* Menambahkan border di sekitar thumb */
 }
 
 /* Global Styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    margin: 0; /* Mengatur margin menjadi nol untuk semua elemen */
+    padding: 0; /* Mengatur padding menjadi nol untuk semua elemen */
+    box-sizing: border-box; /* Mengatur box-sizing agar padding dan border tidak mempengaruhi ukuran elemen */
+    font-family: 'Arial', sans-serif; /* Mengatur font default untuk semua elemen */
 }
 
 body {
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
+    background-color: #f4f4f9; /* Mengatur warna latar belakang body */
+    color: #333; /* Mengatur warna teks default */
+    line-height: 1.6; /* Mengatur tinggi baris untuk memperbaiki keterbacaan */
 }
 
 /* Disable text selection */
 body, p, h1, h2, h3, h4, h5, h6, div {
-    -webkit-user-select: none;  /* Chrome, Safari, Opera */
-    -moz-user-select: none;     /* Firefox */
-    -ms-user-select: none;      /* Internet Explorer/Edge */
-    user-select: none;          /* Non-prefixed version, currently supported by most browsers */
+    -webkit-user-select: none;  /* Menonaktifkan pilihan teks pada Chrome, Safari, Opera */
+    -moz-user-select: none;     /* Menonaktifkan pilihan teks pada Firefox */
+    -ms-user-select: none;      /* Menonaktifkan pilihan teks pada Internet Explorer/Edge */
+    user-select: none;          /* Versi non-prefiks untuk mendukung browser lainnya */
 }
 
 /* Horizontal Navbar Styling */
 .navbar-container {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #0056b3;
-    z-index: 1000;
+    width: 100%; /* Memastikan navbar lebar penuh */
+    position: fixed; /* Menetapkan navbar tetap di bagian atas */
+    top: 0; /* Mengatur posisi di atas halaman */
+    left: 0; /* Mengatur posisi di paling kiri */
+    background-color: #0056b3; /* Mengatur warna latar belakang navbar */
+    z-index: 1000; /* Mengatur lapisan prioritas untuk memastikan navbar di atas elemen lainnya */
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    display: flex; /* Mengatur layout flex untuk navbar */
+    justify-content: space-between; /* Menyebarkan item secara merata dengan ruang di antara */
+    align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+    padding: 10px 20px; /* Menambahkan padding di dalam navbar */
 }
 
 .navbar ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Menghapus bullet list */
+    display: flex; /* Mengatur layout flex untuk menu */
+    padding: 0; /* Mengatur padding menjadi nol */
+    margin: 0; /* Mengatur margin menjadi nol */
 }
 
 .navbar ul li {
-    margin: 0 20px;
+    margin: 0 20px; /* Menambahkan jarak horizontal antara item menu */
 }
 
 .navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    color: white; /* Mengatur warna teks link */
+    text-decoration: none; /* Menghapus underline pada link */
+    font-size: 18px; /* Mengatur ukuran font link */
+    transition: color 0.3s ease; /* Menambahkan transisi halus pada perubahan warna */
 }
 
 .navbar ul li a:hover {
-    color: #ffcc00;
+    color: #ffcc00; /* Mengubah warna link saat dihover */
 }
 
 .logo-container {
-    text-align: center;
+    text-align: center; /* Mengatur logo agar berada di tengah */
 }
 
 .logo {
-    width: 40px;
-    animation: float 4s ease-in-out infinite;
+    width: 40px; /* Mengatur lebar logo */
+    animation: float 4s ease-in-out infinite; /* Menambahkan animasi floating ke logo */
 }
 
 .hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
+    display: none; /* Menyembunyikan hamburger menu pada layar besar */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
+    flex-direction: column; /* Mengatur hamburger menu dalam kolom */
+    gap: 5px; /* Menambahkan jarak antar batang hamburger */
 }
 
 .hamburger span {
-    height: 3px;
-    width: 25px;
-    background: white;
-    transition: 0.3s;
+    height: 3px; /* Mengatur tinggi batang hamburger */
+    width: 25px; /* Mengatur lebar batang hamburger */
+    background: white; /* Mengatur warna batang hamburger */
+    transition: 0.3s; /* Menambahkan transisi pada perubahan tampilan */
 }
 
 /* Content Styling */
 .content {
-    margin-top: 100px;
-    padding: 20px;
+    margin-top: 100px; /* Menambahkan jarak dari atas agar tidak tertutup navbar */
+    padding: 20px; /* Menambahkan padding ke dalam konten */
 }
 
 h1, h2 {
-    color: #003f7f;
+    color: #003f7f; /* Mengatur warna judul */
 }
 
 p, ul {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 10px; /* Menambahkan margin atas untuk paragraf dan list */
+    font-size: 18px; /* Mengatur ukuran font teks */
 }
 
 section {
-    margin-bottom: 60px;
+    margin-bottom: 60px; /* Menambahkan jarak bawah pada setiap section */
 }
 
 #header {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
+    background-color: white; /* Mengatur warna latar belakang header */
+    padding: 20px; /* Menambahkan padding di dalam header */
+    border-radius: 8px; /* Membuat sudut membulat pada header */
 }
 
 #main-content-1 {
-    padding: 20px;
-    border-radius: 8px  ;
-    text-align: justify;
+    padding: 20px; /* Menambahkan padding di dalam konten utama */
+    border-radius: 8px; /* Membuat sudut membulat pada konten utama */
+    text-align: justify; /* Mengatur teks agar rata kanan-kiri */
 }
 
 #main-content-1 a {
-    text-decoration: none;
-    color: blue;
-    transition: 0.2s ease-in-out;
+    text-decoration: none; /* Menghapus underline pada link */
+    color: blue; /* Mengatur warna link */
+    transition: 0.2s ease-in-out; /* Menambahkan transisi pada hover link */
 }
 
 #main-content-1 a:hover {
-    color: inherit;
-    text-decoration: underline;
+    color: inherit; /* Menjaga warna tetap sama saat dihover */
+    text-decoration: underline; /* Menambahkan underline saat dihover */
 }
 
 /* Footer Styling */
 footer {
-    background-color: #0056b3;
-    color: white;
-    padding: 40px 0 20px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #0056b3; /* Mengatur warna latar belakang footer */
+    color: white; /* Mengatur warna teks footer */
+    padding: 40px 0 20px; /* Menambahkan padding atas dan bawah */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+    position: relative; /* Mengatur posisi relatif */
+    bottom: 0; /* Menempelkan footer di bagian bawah */
+    width: 100%; /* Memastikan footer lebar penuh */
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex; /* Mengatur layout flex pada container footer */
+    justify-content: space-around; /* Menyebarkan item secara merata di dalam container */
+    max-width: 1200px; /* Menentukan lebar maksimum footer */
+    margin: 0 auto; /* Menjaga footer berada di tengah */
+    padding: 20px; /* Menambahkan padding di dalam footer */
 }
 
 .footer-section {
-    width: 30%;
+    width: 30%; /* Mengatur lebar setiap section footer */
 }
 
 .footer-section h3 {
-    color: #ffcc00;
-    margin-bottom: 20px;
-    font-size: 20px;
+    color: #ffcc00; /* Mengatur warna judul section */
+    margin-bottom: 20px; /* Menambahkan margin bawah pada judul */
+    font-size: 20px; /* Mengatur ukuran font judul */
 }
 
 .footer-section ul {
-    list-style-type: none;
+    list-style-type: none; /* Menghapus bullet list */
 }
 
 .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Menambahkan jarak bawah untuk setiap item */
 }
 
 .footer-section ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: white; /* Mengatur warna link di footer */
+    text-decoration: none; /* Menghapus underline */
+    transition: color 0.3s ease; /* Menambahkan transisi pada hover */
 }
 
 .footer-section ul li a:hover {
-    color: #ffcc00;
+    color: #ffcc00; /* Mengubah warna link saat dihover */
 }
 
 .footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-    border-top: 1px solid #ffcc00;
-    padding-top: 10px;
+    margin-top: 20px; /* Menambahkan margin atas */
+    font-size: 14px; /* Mengatur ukuran font */
+    border-top: 1px solid #ffcc00; /* Menambahkan border atas */
+    padding-top: 10px; /* Menambahkan padding atas */
 }
-
 
 /* Tampilan mobile */
 @media (max-width: 768px) {
     .headers {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        gap: 10px;
-        text-align: center;
+        display: flex; /* Menampilkan elemen dalam flex */
+        flex-direction: column; /* Mengatur arah kolom untuk tampilan mobile */
+        align-items: center; /* Menyelaraskan elemen secara horizontal di tengah */
+        gap: 10px; /* Menambahkan jarak antar elemen */
+        text-align: center; /* Mengatur teks agar berada di tengah */
     }
 
     .headers h1 {
-        font-size: 24px; 
+        font-size: 24px; /* Mengatur ukuran font judul pada tampilan mobile */
     }
 
     .headers img {
-        width: 150px;
+        width: 150px; /* Mengatur lebar gambar header */
     }
 
     .hamburger {
-        display: flex;
+        display: flex; /* Menampilkan hamburger menu pada tampilan mobile */
     }
 
     .navbar ul {
-        display: none;
-        flex-direction: column;
-        background-color: #0056b3;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
+        display: none; /* Menyembunyikan menu saat tidak digunakan */
+        flex-direction: column; /* Mengatur layout kolom untuk menu */
+        background-color: #0056b3; /* Mengatur warna latar menu */
+        position: absolute; /* Mengatur posisi menu agar berada di atas */
+        top: 60px; /* Mengatur posisi di bawah navbar */
+        left: 0; /* Mengatur posisi kiri */
+        width: 100%; /* Memastikan menu lebar penuh */
     }
 
     .navbar ul.show {
-        display: flex;
+        display: flex; /* Menampilkan menu saat toggle aktif */
     }
 
     .navbar ul li {
-        text-align: center;
-        padding: 10px 0;
+    	text-align: center; /* Mengatur teks pada item menu agar berada di tengah */
+    	padding: 10px 0; /* Menambahkan padding vertikal pada item menu */
     }
-
+    
     .footer-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; 
+    	display: flex; /* Menampilkan footer dalam layout flex */
+    	flex-direction: column; /* Mengatur arah kolom untuk footer pada tampilan mobile */
+    	align-items: flex-start; /* Menyelaraskan elemen ke kiri */
     }
-
+    
     .footer-section {
-        margin-bottom: 20px;
-        text-align: left; 
-        width: 100%; 
+    	margin-bottom: 20px; /* Menambahkan jarak bawah pada setiap section footer */
+    	text-align: left; /* Mengatur teks agar rata kiri */
+    	width: 100%; /* Memastikan setiap section lebar penuh */
     }
-
+    
     .footer-section:nth-child(1) {
-        order: 1; 
+    	order: 1; /* Menentukan urutan tampilan section pertama */
     }
-
+    
     .footer-section:nth-child(2) {
-        order: 2; 
+    	order: 2; /* Menentukan urutan tampilan section kedua */
     }
-
+    
     .footer-section:nth-child(3) {
-        order: 3; 
+    	order: 3; /* Menentukan urutan tampilan section ketiga */
     }
 }
