@@ -1,254 +1,254 @@
 /* Custom scrollbar styling */
-::-webkit-scrollbar {
-    width: 10px;
+::-webkit-scrollbar { 
+    width: 10px; /* Lebar scrollbar */
 }
 
-::-webkit-scrollbar-track {
-    background: #1a1a1a;
+::-webkit-scrollbar-track { 
+    background: #1a1a1a; /* Warna latar belakang track scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ff0000; /* Merah */
-    border-radius: 10px;
-    border: 2px solid #1a1a1a;
+    background-color: #ff0000; /* Merah untuk scrollbar thumb */
+    border-radius: 10px; /* Sudut melengkung untuk scrollbar thumb */
+    border: 2px solid #1a1a1a; /* Border berwarna gelap pada scrollbar thumb */
 }
 
 /* Global Styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Margin diatur ke nol untuk semua elemen */
+    padding: 0; /* Padding diatur ke nol untuk semua elemen */
+    box-sizing: border-box; /* Box-sizing untuk memperhitungkan padding dan border */
+    font-family: 'Roboto', sans-serif; /* Font default untuk semua elemen */
 }
 
 body {
     background-color: #0d0d0d; /* Hitam pekat untuk tampilan cyber */
-    color: #e6e6e6;
-    line-height: 1.6;
+    color: #e6e6e6; /* Warna teks abu terang */
+    line-height: 1.6; /* Jarak antar garis teks */
 }
 
 /* Disable text selection */
 body, p, h1, h2, h3, h4, h5, h6, div {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    -webkit-user-select: none; /* Nonaktifkan seleksi teks di Chrome */
+    -moz-user-select: none; /* Nonaktifkan seleksi teks di Firefox */
+    -ms-user-select: none; /* Nonaktifkan seleksi teks di IE/Edge */
+    user-select: none; /* Nonaktifkan seleksi teks di browser lainnya */
 }
 
 /* Horizontal Navbar Styling */
 .navbar-container {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: linear-gradient(90deg, #0d0d0d, #1a1a1a);
-    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3); /* Merah */
-    z-index: 1000;
+    width: 100%; /* Navbar mengambil lebar penuh */
+    position: fixed; /* Posisi tetap di bagian atas */
+    top: 0; /* Menempel di atas halaman */
+    left: 0; /* Menempel di sisi kiri halaman */
+    background: linear-gradient(90deg, #0d0d0d, #1a1a1a); /* Gradasi hitam untuk background */
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3); /* Bayangan merah */
+    z-index: 1000; /* Mengutamakan navbar di atas elemen lainnya */
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    display: flex; /* Flex untuk menata elemen dalam navbar */
+    justify-content: space-between; /* Elemen tersebar di kedua sisi */
+    align-items: center; /* Posisikan elemen di tengah vertikal */
+    padding: 10px 20px; /* Padding dalam navbar */
 }
 
 .navbar ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Hapus bullet dari daftar */
+    display: flex; /* Flex untuk mengatur daftar secara horizontal */
+    padding: 0; /* Hapus padding bawaan */
+    margin: 0; /* Hapus margin bawaan */
 }
 
 .navbar ul li {
-    margin: 0 20px;
+    margin: 0 20px; /* Jarak antar item daftar */
 }
 
 .navbar ul li a {
-    color: #ff0000; /* Merah */
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease, transform 0.2s;
+    color: #ff0000; /* Merah untuk teks tautan */
+    text-decoration: none; /* Hapus garis bawah dari tautan */
+    font-size: 18px; /* Ukuran font untuk tautan */
+    transition: color 0.3s ease, transform 0.2s; /* Efek transisi warna dan transformasi */
 }
 
 .navbar ul li a:hover {
-    color: #ff4d4d; /* Merah muda */
-    transform: scale(1.1); /* Membuat efek hover yang menarik */
+    color: #ff4d4d; /* Merah muda saat di-hover */
+    transform: scale(1.1); /* Efek zoom saat hover */
 }
 
 .logo-container {
-    text-align: center;
+    text-align: center; /* Rata tengah logo */
 }
 
 .logo {
-    width: 40px;
-    animation: float 4s ease-in-out infinite;
+    width: 40px; /* Lebar logo */
+    animation: float 4s ease-in-out infinite; /* Efek animasi mengambang */
 }
 
 .hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
+    display: none; /* Tersembunyi pada tampilan desktop */
+    cursor: pointer; /* Kursor berubah menjadi pointer */
+    flex-direction: column; /* Tampilan kolom untuk garis */
+    gap: 5px; /* Jarak antar garis */
 }
 
 .hamburger span {
-    height: 3px;
-    width: 25px;
-    background: #ff0000; /* Merah */
-    transition: 0.3s;
+    height: 3px; /* Tinggi garis hamburger */
+    width: 25px; /* Lebar garis hamburger */
+    background: #ff0000; /* Warna merah untuk garis hamburger */
+    transition: 0.3s; /* Transisi efek saat di-click */
 }
 
 /* Content Styling */
 .content {
-    margin-top: 100px;
-    padding: 20px;
+    margin-top: 100px; /* Jarak dari atas */
+    padding: 20px; /* Padding dalam konten */
 }
 
 h1, h2 {
-    color: #ff0000; /* Merah */
-    text-shadow: 0px 0px 5px rgba(255, 0, 0, 0.8); /* Merah */
+    color: #ff0000; /* Merah untuk judul */
+    text-shadow: 0px 0px 5px rgba(255, 0, 0, 0.8); /* Bayangan merah */
 }
 
 p, ul {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 10px; /* Margin atas untuk paragraf dan daftar */
+    font-size: 18px; /* Ukuran font */
 }
 
 section {
-    margin-bottom: 60px;
+    margin-bottom: 60px; /* Margin bawah antar section */
 }
 
 #header {
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.2); /* Merah */
+    background-color: #1a1a1a; /* Warna latar belakang header */
+    padding: 20px; /* Padding dalam header */
+    border-radius: 8px; /* Sudut melengkung header */
+    box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.2); /* Bayangan merah */
 }
 
 #main-content-1 {
-    padding: 20px;
-    border-radius: 8px;
-    text-align: justify;
-    background-color: #0d0d0d;
-    box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.2); /* Merah */
+    padding: 20px; /* Padding dalam konten utama */
+    border-radius: 8px; /* Sudut melengkung */
+    text-align: justify; /* Teks rata kiri-kanan */
+    background-color: #0d0d0d; /* Background hitam pekat */
+    box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.2); /* Bayangan merah */
 }
 
 #main-content-1 a {
-    text-decoration: none;
-    color: #ff0000; /* Merah */
-    transition: 0.3s ease;
+    text-decoration: none; /* Hapus garis bawah tautan */
+    color: #ff0000; /* Warna merah */
+    transition: 0.3s ease; /* Efek transisi */
 }
 
 #main-content-1 a:hover {
-    color: #ff4d4d; /* Merah muda */
-    text-decoration: underline;
+    color: #ff4d4d; /* Merah muda saat di-hover */
+    text-decoration: underline; /* Garis bawah saat di-hover */
 }
 
 /* Footer Styling */
 footer {
-    background-color: #1a1a1a;
-    color: #e6e6e6;
-    padding: 40px 0 20px;
-    text-align: center;
-    width: 100%;
-    box-shadow: 0px -4px 10px rgba(255, 0, 0, 0.2); /* Merah */
+    background-color: #1a1a1a; /* Warna latar belakang footer */
+    color: #e6e6e6; /* Warna teks footer */
+    padding: 40px 0 20px; /* Padding dalam footer */
+    text-align: center; /* Teks rata tengah */
+    width: 100%; /* Footer selebar layar */
+    box-shadow: 0px -4px 10px rgba(255, 0, 0, 0.2); /* Bayangan merah */
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex; /* Flex layout */
+    justify-content: space-around; /* Sebar bagian */
+    max-width: 1200px; /* Lebar maksimum */
+    margin: 0 auto; /* Pusatkan kontainer */
+    padding: 20px; /* Padding dalam footer */
 }
 
 .footer-section {
-    width: 30%;
+    width: 30%; /* Lebar bagian footer */
 }
 
 .footer-section h3 {
-    color: #ff0000; /* Merah */
-    margin-bottom: 20px;
-    font-size: 20px;
+    color: #ff0000; /* Merah untuk judul bagian */
+    margin-bottom: 20px; /* Margin bawah untuk judul */
+    font-size: 20px; /* Ukuran font */
 }
 
 .footer-section ul {
-    list-style-type: none;
+    list-style-type: none; /* Hapus bullet */
 }
 
 .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Margin bawah untuk item */
 }
 
 .footer-section ul li a {
-    color: #e6e6e6;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #e6e6e6; /* Warna teks */
+    text-decoration: none; /* Hapus garis bawah */
+    transition: color 0.3s ease; /* Transisi warna */
 }
 
 .footer-section ul li a:hover {
-    color: #ff0000; /* Merah */
+    color: #ff0000; /* Warna merah saat di-hover */
 }
 
 .footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-    border-top: 1px solid #333;
-    padding-top: 10px;
+    margin-top: 20px; /* Margin atas */
+    font-size: 14px; /* Ukuran font */
+    border-top: 1px solid #333; /* Border atas */
+    padding-top: 10px; /* Padding atas */
 }
 
 /* Tampilan mobile */
 @media (max-width: 768px) {
     .headers {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        text-align: center;
+        display: flex; /* Flex layout */
+        flex-direction: column; /* Kolom untuk header */
+        align-items: center; /* Pusatkan elemen */
+        gap: 10px; /* Jarak antar elemen */
+        text-align: center; /* Teks rata tengah */
     }
 
     .headers h1 {
-        font-size: 24px;
+        font-size: 24px; /* Ukuran font judul */
     }
 
     .headers img {
-        width: 150px;
+        width: 150px; /* Lebar gambar */
     }
 
     .hamburger {
-        display: flex;
+        display: flex; /* Tampilkan hamburger */
     }
 
     .navbar ul {
-        display: none;
-        flex-direction: column;
-        background-color: #1a1a1a;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3); /* Merah */
+        display: none; /* Sembunyikan daftar */
+        flex-direction: column; /* Tampilkan secara vertikal */
+        background-color: #1a1a1a; /* Background hitam */
+        position: absolute; /* Posisi absolut */
+        top: 60px; /* Jarak dari atas */
+        left: 0; /* Jarak dari kiri */
+        width: 100%; /* Lebar penuh */
+        box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3); /* Bayangan merah */
     }
 
     .navbar ul.show {
-        display: flex;
+        display: flex; /* Tampilkan daftar */
     }
 
     .navbar ul li {
-        text-align: center;
-        padding: 10px 0;
+        text-align: center; /* Teks rata tengah */
+        padding: 10px 0; /* Padding dalam */
     }
 
     .footer-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        display: flex; /* Flex layout */
+        flex-direction: column; /* Kolom untuk footer */
+        align-items: flex-start; /* Rata kiri */
     }
 
     .footer-section {
-        margin-bottom: 20px;
-        text-align: left;
-        width: 100%;
+        margin-bottom: 20px; /* Margin bawah */
+        text-align: left; /* Teks rata kiri */
+        width: 100%; /* Lebar penuh */
     }
 }
